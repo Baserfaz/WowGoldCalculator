@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <!-- Meta data -->
+        <meta charset="utf-8">
+        <meta name="description" content="World of worldcraft gold farming calculator.">
+        <meta name="author" content="Heikki Heiskanen">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+
+        <!-- Link files -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Jquery -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+        <!-- Link js -->
+        <script src="js/script.js"></script>
+
+        <!-- Title of the website -->
+        <title>Gold calculator</title>
+
+    </head>
+    <body>
+
+        <div class="container">
+
+            <!-- header -->
+            <div class="row header">
+                <div class="twelve columns">
+                    <h1 class="">Gold calculator</h1>
+                </div>
+            </div>
+
+            <!-- help text -->
+            <div class="row help">
+                <div class="twelve columns">
+                    <h6 class="stylish_header">Purpose</h6>
+                    <p>
+                        This application is meant to help maximizing the gold per hour (gph) when farming in World of Warcraft.
+                        The idea is to farm/grind in a same spot for some amount of time and then use this calculator to automatically
+                        calculate the gph. From the calculated gph you can compare farming spots.
+                    </p>
+                    </br>
+                    <h6 class="stylish_header">How to</h6>
+                    <p>
+                        To use this application, give the starting amount of money you currently have on your character. 
+                        After clicking the "Start timer"-button, you can start farming. After you are done, give the amount of 
+                        money again and click "calculate"-button (it will show after clicking "start timer"-button). You should see calculated values in the table below.
+                    </p>
+                    </br>
+                    <h6 class="stylish_header">Important pointers</h6>
+                    <p>
+                        Remember to always put the amount of gold, silver and copper that are in your inventory, don't use self
+                        calculated values. Example: you start with 100g 0s 0c and end with 125g 54s 12c. You simple put those two
+                        values in this calculator as start and end values.
+                    </p>
+                </div>
+            </div>
+
+            <!-- GOLD AMOUNTS -->
+            <div class="inputfields">
+
+                <div class="row">
+                    <div class="twelve columns">
+                        <h6 class="stylish_header">Set your current amount of money</h6>
+                    </div>
+                </div>
+
+                <div class="row start_gold_container">
+                    <div class="two columns">
+                        <label for="gold">Gold</label>
+                        <input class="u-full-width" type="number" min="0" placeholder="0" id="gold">
+                    </div>
+                    <div class="two columns">
+                        <label for="silver">Silver</label>
+                        <input class="u-full-width" type="number" min="0" max="99" placeholder="0" id="silver">
+                    </div>
+                    <div class="two columns">
+                        <label for="copper">Copper</label>
+                        <input class="u-full-width" type="number" min="0" max="99" placeholder="0" id="copper">
+                    </div>
+                </div>
+
+                <!-- calculate button -->
+                <div class="row calc_button">
+                    <div class="two columns">
+                        <a href="" class="button">Calculate</a>
+                    </div>
+                    <div class="ten columns">
+                        <p>Capturing data... (remember to fill input fields)</p>
+                    </div>
+                </div>
+
+                <!-- timer button -->
+                <div class="row start_timer_button">
+                    <div class="two columns start_timer">
+                        <a href="" class="button">Start timer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- results -->
+            <div class="row content">
+                <div class="twelve columns">
+                    <table class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Start Time</th>
+                                <th>End Time</th>
+                                <th>Duration</th>
+                                <th>Gold earned</th>
+                                <th>Gold per hour</th>
+                            </tr>
+                        </thead>
+                        <tbody class="result_table_elements"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="row footer">
+                <div class="twelve columns">
+                    <p>&copy; 2017 Heikki Heiskanen</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

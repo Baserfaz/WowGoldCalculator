@@ -1,0 +1,49 @@
+p, a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.header h1 {
+    text-align: center;
+    margin-top: 18rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.content {
+    color: #333;
+    margin-top: 3rem;
+}
+
+.help {
+    padding: 3rem 0 3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.help p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.inputfields {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.table_row:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.stylish_header {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+}
